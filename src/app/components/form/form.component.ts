@@ -1,14 +1,20 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core'
-import { FormGroup, FormControl, Validators } from '@angular/forms'
-import { FormParameter } from '../../app.component'
+import { FormGroup, FormControl } from '@angular/forms'
+import { FormParameter } from '../../../utils/interfaces'
 
+/**
+ * The form component
+ */
 @Component({
     selector: 'form-component',
     templateUrl: './form.component.html',
     styleUrls: ['./form.component.scss'],
 })
 export class FormComponent implements OnInit {
-    constructor() {}
+    /**
+     * initial values as placeholder
+     *
+     */
 
     initialValue = {
         salary: 100000,
@@ -23,7 +29,17 @@ export class FormComponent implements OnInit {
         retirementAge: 65,
     }
 
+    /**
+     * The data-binding to emit data to the parent component
+     *
+     * See {@link FormParameter}
+     */
+
     @Output() newItemEvent = new EventEmitter<FormParameter>()
+
+    /**
+     * The form group state
+     */
 
     calculatorForm = new FormGroup({
         salary: new FormControl(this.initialValue.salary),
@@ -38,11 +54,20 @@ export class FormComponent implements OnInit {
         retirementAge: new FormControl(this.initialValue.retirementAge),
     })
 
+    /**
+     * on init emit data to the parent
+     */
+
     ngOnInit() {
         this.newItemEvent.emit(this.initialValue)
     }
 
-    onSubmit(value) {
+    /**
+     * handle form submit
+     *
+     * @param (value) take value from the form and emit to parent
+     */
+    onSubmit(value: FormParameter) {
         this.newItemEvent.emit(value)
     }
 }

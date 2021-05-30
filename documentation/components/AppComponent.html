@@ -1,0 +1,955 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>capital-balance-projection documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">capital-balance-projection documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AppComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/app.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>The app root component</p>
+
+    </p>
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-root</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./app.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./app.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#data">data</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#calculateContributions">calculateContributions</a>
+                            </li>
+                            <li>
+                                <a href="#getPopulateYearlyData">getPopulateYearlyData</a>
+                            </li>
+                            <li>
+                                <a href="#populateData">populateData</a>
+                            </li>
+                            <li>
+                                <a href="#updateValue">updateValue</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateContributions"></a>
+                    <span class="name">
+                        <b>
+                            calculateContributions
+                        </b>
+                        <a href="#calculateContributions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calculateContributions(salary: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, previousContributions: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, rate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, inflationRate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/app.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Calculate the total contribution for the year</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>salary</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>previousContributions</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>rate</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>inflationRate</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPopulateYearlyData"></a>
+                    <span class="name">
+                        <b>
+                            getPopulateYearlyData
+                        </b>
+                        <a href="#getPopulateYearlyData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPopulateYearlyData(undefined: <a href="../interfaces/GetYearlyData.html">GetYearlyData</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/app.component.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Recursive</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                                <code><a href="../interfaces/GetYearlyData.html" target="_self" >GetYearlyData</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="populateData"></a>
+                    <span class="name">
+                        <b>
+                            populateData
+                        </b>
+                        <a href="#populateData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>populateData(undefined: <a href="../interfaces/FormParameter.html">FormParameter</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="157"
+                            class="link-to-prism">src/app/app.component.ts:157</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Populate data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                                <code><a href="../interfaces/FormParameter.html" target="_self" >FormParameter</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateValue"></a>
+                    <span class="name">
+                        <b>
+                            updateValue
+                        </b>
+                        <a href="#updateValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateValue(value: <a href="../interfaces/FormParameter.html">FormParameter</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="210"
+                            class="link-to-prism">src/app/app.component.ts:210</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Receive values form child form component</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="../interfaces/FormParameter.html" target="_self" >FormParameter</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="data"></a>
+                        <span class="name">
+                            <b>
+                            data</b>
+                            <a href="#data"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/AnnualData.html" target="_self" >Array&lt;AnnualData&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/app.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The data for table and chart</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="title"></a>
+                        <span class="name">
+                            <b>
+                            title</b>
+                            <a href="#title"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;Capital Balance Projection&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/app.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The title of the component</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input } from &#x27;@angular/core&#x27;
+import { AnnualData, FormParameter, GetYearlyData } from &#x27;../utils/interfaces&#x27;
+
+/**
+ * Expected life expectancy of an individual
+ */
+const lifeExpectancy &#x3D; 100
+
+/**
+ * Current year static value
+ */
+const currentYearConst &#x3D; 2020
+
+/**
+ * The app root component
+ */
+@Component({
+    selector: &#x27;app-root&#x27;,
+    templateUrl: &#x27;./app.component.html&#x27;,
+    styleUrls: [&#x27;./app.component.scss&#x27;],
+})
+export class AppComponent {
+    /**
+     * The title of the component
+     */
+    title &#x3D; &#x27;Capital Balance Projection&#x27;
+
+    /**
+     * The data for table and chart
+     */
+
+    data: Array&lt;AnnualData&gt; &#x3D; []
+
+    /**
+     * Calculate the total contribution for the year
+     *
+     * @param {salary} the user annual salary in number
+     * @param {previousContributions} the previous year contributions total
+     * @param {rate} the current contribution rate
+     * @param {inflationRate} the inflation rate
+     */
+
+    calculateContributions(
+        salary: number,
+        previousContributions: number,
+        rate: number,
+        inflationRate: number
+    ) {
+        if (
+            salary &amp;&amp;
+            (previousContributions !&#x3D;&#x3D; null ||
+                previousContributions !&#x3D;&#x3D; undefined) &amp;&amp;
+            rate &amp;&amp;
+            inflationRate
+        ) {
+            if (previousContributions &#x3D;&#x3D;&#x3D; 0) {
+                return (salary * rate) / 100
+            } else {
+                return previousContributions * (1 + inflationRate / 100)
+            }
+        }
+        return
+    }
+
+    /**
+     * Recursive
+     *
+     * @param {salary} the user annual salary in number
+     * @param {previousContributions} the previous year contributions total
+     * @param {rate} the current contribution rate
+     * @param {inflationRate} the inflation rate
+     */
+
+    getPopulateYearlyData({
+        salary,
+        currentYear,
+        startBalance,
+        previousContribution,
+        contributionRate,
+        inflationRate,
+        earningsRate,
+        feesRate,
+        taxRate,
+        currentAge,
+        yearLeft,
+        retirementAge,
+        withdrawalRate,
+    }: GetYearlyData) {
+        if (yearLeft &#x3D;&#x3D;&#x3D; 0) {
+            return
+        } else {
+            let currentContribution &#x3D; 0
+            if (currentAge &lt;&#x3D; retirementAge) {
+                currentContribution &#x3D; this.calculateContributions(
+                    salary,
+                    previousContribution,
+                    contributionRate,
+                    inflationRate
+                )
+            }
+            const earnings &#x3D;
+                ((startBalance + currentContribution) * earningsRate) / 100
+            const fees &#x3D;
+                ((startBalance + currentContribution + earnings) * feesRate) /
+                100
+            const tax &#x3D; ((currentContribution + earnings) * taxRate) / 100
+            let withdrawal &#x3D; 0
+            if (currentAge &gt; retirementAge) {
+                withdrawal &#x3D; (startBalance * withdrawalRate) / 100
+            }
+            const endBalance &#x3D;
+                startBalance +
+                currentContribution +
+                earnings -
+                fees -
+                tax -
+                withdrawal
+            let yearLeftAge
+            if (yearLeft &gt; 0) {
+                yearLeftAge &#x3D; yearLeft - 1
+            }
+            this.data.push({
+                currentYear,
+                currentAge,
+                startBalance: Math.ceil(startBalance),
+                contributions: Math.ceil(currentContribution),
+                earnings: Math.ceil(earnings),
+                fees: Math.ceil(fees),
+                tax: Math.ceil(tax),
+                withdrawal: Math.ceil(withdrawal),
+                endBalance: Math.ceil(endBalance),
+            })
+            this.getPopulateYearlyData({
+                salary,
+                currentYear: currentYear + 1,
+                startBalance: endBalance,
+                previousContribution: currentContribution,
+                contributionRate,
+                inflationRate,
+                earningsRate,
+                feesRate,
+                taxRate,
+                currentAge: currentAge + 1,
+                yearLeft: yearLeftAge,
+                retirementAge,
+                withdrawalRate,
+            })
+        }
+    }
+
+    /**
+     * Populate data
+     *
+     * @param {{FormParameter}} values from form
+     */
+
+    populateData({
+        salary,
+        contributionRate,
+        inflationRate,
+        earning,
+        fees,
+        tax,
+        withdrawalRate,
+        currentAge,
+        currentBalance,
+        retirementAge,
+    }: FormParameter) {
+        if (
+            salary &amp;&amp;
+            contributionRate &amp;&amp;
+            inflationRate &amp;&amp;
+            earning &amp;&amp;
+            fees &amp;&amp;
+            tax &amp;&amp;
+            withdrawalRate &amp;&amp;
+            currentAge &amp;&amp;
+            currentBalance &amp;&amp;
+            retirementAge &amp;&amp;
+            lifeExpectancy &amp;&amp;
+            currentYearConst
+        ) {
+            // clear values before repopulating
+            this.data &#x3D; []
+            const yearLeft &#x3D; lifeExpectancy - currentAge
+            this.getPopulateYearlyData({
+                salary,
+                currentYear: currentYearConst,
+                startBalance: currentBalance,
+                previousContribution: 0,
+                contributionRate,
+                inflationRate,
+                earningsRate: earning,
+                feesRate: fees,
+                taxRate: tax,
+                currentAge,
+                yearLeft,
+                retirementAge,
+                withdrawalRate,
+            })
+        }
+    }
+
+    /**
+     * Receive values form child form component
+     *
+     * @param {value:FormParameter} values from form
+     */
+
+    updateValue(value: FormParameter) {
+        this.populateData(value)
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- Toolbar --&gt;
+&lt;div class&#x3D;&quot;toolbar&quot; role&#x3D;&quot;banner&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;content&quot; role&#x3D;&quot;main&quot;&gt;
+    &lt;h1 class&#x3D;&quot;page-header&quot;&gt;{{ title }}&lt;/h1&gt;
+    &lt;div class&#x3D;&quot;card-container&quot;&gt;
+        &lt;form-component (newItemEvent)&#x3D;&quot;updateValue($event)&quot;&gt;&lt;/form-component&gt;
+        &lt;table-component [data]&#x3D;&quot;data&quot;&gt;&lt;/table-component&gt;
+        &lt;chart-component [chartData]&#x3D;&quot;data&quot;&gt;&lt;/chart-component&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Footer --&gt;
+    &lt;footer&gt;&lt;/footer&gt;
+
+    &lt;svg
+        id&#x3D;&quot;clouds&quot;
+        alt&#x3D;&quot;Gray Clouds Background&quot;
+        xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot;
+        width&#x3D;&quot;2611.084&quot;
+        height&#x3D;&quot;485.677&quot;
+        viewBox&#x3D;&quot;0 0 2611.084 485.677&quot;
+    &gt;
+        &lt;path
+            id&#x3D;&quot;Path_39&quot;
+            data-name&#x3D;&quot;Path 39&quot;
+            d&#x3D;&quot;M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z&quot;
+            transform&#x3D;&quot;translate(142.69 -634.312)&quot;
+            fill&#x3D;&quot;#eee&quot;
+        /&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+
+&lt;router-outlet&gt;&lt;/router-outlet&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./app.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.page-header {
+    width: 100%;
+    margin: 2rem 1rem;
+    text-align: center;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- Toolbar --><div class="toolbar" role="banner"></div><div class="content" role="main">    <h1 class="page-header">{{ title }}</h1>    <div class="card-container">        <form-component (newItemEvent)="updateValue($event)"></form-component>        <table-component [data]="data"></table-component>        <chart-component [chartData]="data"></chart-component>    </div>    <!-- Footer -->    <footer></footer>    <svg        id="clouds"        alt="Gray Clouds Background"        xmlns="http://www.w3.org/2000/svg"        width="2611.084"        height="485.677"        viewBox="0 0 2611.084 485.677"    >        <path            id="Path_39"            data-name="Path 39"            d="M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z"            transform="translate(142.69 -634.312)"            fill="#eee"        />    </svg></div><router-outlet></router-outlet></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChartComponent', 'selector': 'chart-component'},{'name': 'FormComponent', 'selector': 'form-component'},{'name': 'TableComponent', 'selector': 'table-component'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AppComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

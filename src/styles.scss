@@ -51,6 +51,8 @@ p {
 }
 
 .content {
+    width: 100%;
+    overflow-x: hidden;
     display: flex;
     margin: 32px auto;
     padding: 0 16px;

@@ -6,9 +6,10 @@ import { AppComponent } from './app.component'
 import { ReactiveFormsModule } from '@angular/forms'
 import { FormComponent } from './components/form/form.component'
 import { TableComponent } from './components/table/table.component'
+import { ChartComponent } from './components/chart/chart.component'
 
 @NgModule({
-    declarations: [AppComponent, FormComponent, TableComponent],
+    declarations: [AppComponent, FormComponent, TableComponent, ChartComponent],
     imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
     providers: [],
     bootstrap: [AppComponent],

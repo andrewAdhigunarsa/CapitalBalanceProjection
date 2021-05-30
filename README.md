@@ -17,3 +17,13 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Code Formatting
+
+Run `npm run prettier` to format with prettier
+
+## Documentation
+
+Run `npm run compodoc` to create/update documentation
+
+Run `compodoc -s` to view documentation

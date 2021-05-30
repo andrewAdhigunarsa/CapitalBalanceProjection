@@ -2,9 +2,11 @@
 <div class="toolbar" role="banner"></div>
 
 <div class="content" role="main">
+    <h1 class="page-header">{{ title }}</h1>
     <div class="card-container">
         <form-component (newItemEvent)="updateValue($event)"></form-component>
         <table-component [data]="data"></table-component>
+        <chart-component [chartData]="data"></chart-component>
     </div>
 
     <!-- Footer -->

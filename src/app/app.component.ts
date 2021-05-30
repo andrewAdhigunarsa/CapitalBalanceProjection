@@ -1,44 +1,51 @@
 import { Component, Input } from '@angular/core'
+import { AnnualData, FormParameter, GetYearlyData } from '../utils/interfaces'
 
-export interface FormParameter {
-    salary: number
-    contributionRate: number
-    inflationRate: number
-    earning: number
-    fees: number
-    tax: number
-    withdrawalRate: number
-    currentAge: number
-    currentBalance: number
-    retirementAge: number
-}
-
-export interface AnnualData {
-    currentAge: number
-    currentYear: number
-    contributions: number
-    earnings: number
-    endBalance: number
-    fees: number
-    startBalance: number
-    tax: number
-    withdrawal: number
-}
-
+/**
+ * Expected life expectancy of an individual
+ */
 const lifeExpectancy = 100
+
+/**
+ * Current year static value
+ */
 const currentYearConst = 2020
 
+/**
+ * The app root component
+ */
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    title = 'CapitalBalanceProjection'
+    /**
+     * The title of the component
+     */
+    title = 'Capital Balance Projection'
+
+    /**
+     * The data for table and chart
+     */
 
     data: Array<AnnualData> = []
 
-    calculateContributions(salary, previousContributions, rate, inflationRate) {
+    /**
+     * Calculate the total contribution for the year
+     *
+     * @param {salary} the user annual salary in number
+     * @param {previousContributions} the previous year contributions total
+     * @param {rate} the current contribution rate
+     * @param {inflationRate} the inflation rate
+     */
+
+    calculateContributions(
+        salary: number,
+        previousContributions: number,
+        rate: number,
+        inflationRate: number
+    ) {
         if (
             salary &&
             (previousContributions !== null ||
@@ -55,7 +62,16 @@ export class AppComponent {
         return
     }
 
-    getYearlyData({
+    /**
+     * Recursive
+     *
+     * @param {salary} the user annual salary in number
+     * @param {previousContributions} the previous year contributions total
+     * @param {rate} the current contribution rate
+     * @param {inflationRate} the inflation rate
+     */
+
+    getPopulateYearlyData({
         salary,
         currentYear,
         startBalance,
@@ -69,7 +85,7 @@ export class AppComponent {
         yearLeft,
         retirementAge,
         withdrawalRate,
-    }) {
+    }: GetYearlyData) {
         if (yearLeft === 0) {
             return
         } else {
@@ -114,7 +130,7 @@ export class AppComponent {
                 withdrawal: Math.ceil(withdrawal),
                 endBalance: Math.ceil(endBalance),
             })
-            this.getYearlyData({
+            this.getPopulateYearlyData({
                 salary,
                 currentYear: currentYear + 1,
                 startBalance: endBalance,
@@ -131,6 +147,12 @@ export class AppComponent {
             })
         }
     }
+
+    /**
+     * Populate data
+     *
+     * @param {{FormParameter}} values from form
+     */
 
     populateData({
         salary,
@@ -158,9 +180,10 @@ export class AppComponent {
             lifeExpectancy &&
             currentYearConst
         ) {
+            // clear values before repopulating
             this.data = []
             const yearLeft = lifeExpectancy - currentAge
-            this.getYearlyData({
+            this.getPopulateYearlyData({
                 salary,
                 currentYear: currentYearConst,
                 startBalance: currentBalance,
@@ -177,6 +200,12 @@ export class AppComponent {
             })
         }
     }
+
+    /**
+     * Receive values form child form component
+     *
+     * @param {value:FormParameter} values from form
+     */
 
     updateValue(value: FormParameter) {
         this.populateData(value)
