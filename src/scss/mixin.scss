@@ -1,0 +1,27 @@
+@import './variables';
+
+@mixin breakpoint($size) {
+    @if type-of($size) == 'number' {
+        @media (min-width: $size) {
+            @content;
+        }
+    } @else {
+        @media (min-width: screenSize($size)) {
+            @content;
+        }
+    }
+}
+
+@function screenSize($size) {
+    @if $size== 'small' {
+        @return $screen-small;
+    } @else if($size== 'medium') {
+        @return $screen-medium;
+    } @else if($size== 'large') {
+        @return $screen-large;
+    } @else if($size== 'extra-large') {
+        @return $screen-extra-large;
+    } @else {
+        @return 0;
+    }
+}

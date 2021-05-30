@@ -1,0 +1,30 @@
+<section class="table-wrapper">
+    <div class="table-container">
+        <div class="table-column">
+            <div class="table-row table-row--heading">
+                <span class="opacity-0">Year</span>
+            </div>
+            <div class="table-row">Age</div>
+            <div class="table-row">Start balance</div>
+            <div class="table-row">Contributions</div>
+            <div class="table-row">Earnings</div>
+            <div class="table-row">Fees</div>
+            <div class="table-row">Tax</div>
+            <div class="table-row">Withdrawals</div>
+            <div class="table-row">End balance</div>
+        </div>
+        <div class="table-column" *ngFor="let year of data">
+            <div class="table-row table-row--heading">
+                {{ year.currentYear }}
+            </div>
+            <div class="table-row age">{{ year.currentAge }}</div>
+            <div class="table-row amount">{{ year.startBalance }}</div>
+            <div class="table-row amount">{{ year.contributions }}</div>
+            <div class="table-row amount">{{ year.earnings }}</div>
+            <div class="table-row amount">{{ year.fees }}</div>
+            <div class="table-row amount">{{ year.tax }}</div>
+            <div class="table-row amount">{{ year.withdrawal }}</div>
+            <div class="table-row amount">{{ year.endBalance }}</div>
+        </div>
+    </div>
+</section>

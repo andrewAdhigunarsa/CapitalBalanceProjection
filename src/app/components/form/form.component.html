@@ -1,0 +1,55 @@
+<form
+    class="calculator-form"
+    [formGroup]="calculatorForm"
+    (ngSubmit)="onSubmit(calculatorForm.value)"
+>
+    <label class="text-input">
+        Salary ($):
+        <input type="number" formControlName="salary" required />
+    </label>
+    <label class="text-input">
+        Contribution rate (%):
+        <input type="number" formControlName="contributionRate" required />
+    </label>
+    <label class="text-input">
+        Inflation rate (%):
+        <input type="number" formControlName="inflationRate" required />
+    </label>
+    <label class="text-input">
+        Earning (%):
+        <input type="number" formControlName="earning" required />
+    </label>
+    <label class="text-input">
+        Fees (%):
+        <input type="number" formControlName="fees" required />
+    </label>
+    <label class="text-input">
+        Tax (%):
+        <input type="number" formControlName="tax" required />
+    </label>
+    <label class="text-input">
+        Withdrawal rate (%):
+        <input type="number" formControlName="withdrawalRate" required />
+    </label>
+    <label class="text-input">
+        Current age:
+        <input type="number" formControlName="currentAge" required />
+    </label>
+    <label class="text-input">
+        Current balance ($):
+        <input type="number" formControlName="currentBalance" required />
+    </label>
+    <label class="text-input">
+        Retirement age:
+        <input type="number" formControlName="retirementAge" required />
+    </label>
+    <div class="submit-button-wrapper">
+        <button
+            class="submit-button"
+            type="submit"
+            [disabled]="!calculatorForm.valid"
+        >
+            Submit
+        </button>
+    </div>
+</form>

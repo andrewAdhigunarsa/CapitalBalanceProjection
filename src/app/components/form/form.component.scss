@@ -1,0 +1,41 @@
+@import '../../../scss/mixin';
+@import '../../../scss/colors';
+
+.calculator-form {
+    display: flex;
+    flex-wrap: wrap;
+
+    .text-input {
+        flex-basis: 100%;
+        padding: 0.5rem 0.75rem;
+
+        @include breakpoint('medium') {
+            flex-basis: 50%;
+        }
+    }
+
+    .submit-button-wrapper {
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+.text-input {
+    color: $primary-text-color;
+    font-size: 0.85rem;
+
+    input {
+        width: 100%;
+        margin-top: 10px;
+        padding: 0.75rem 1rem;
+        border-color: $secondary-text-color;
+        border-style: solid;
+        border-radius: 4px;
+        border-width: 1px;
+    }
+}
+
+.submit-button {
+    padding: 0.65rem 1rem;
+    min-width: 150px;
+    border-radius: 200px;
+}
